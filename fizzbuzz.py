@@ -1,0 +1,14 @@
+
+
+for n in range(1,1001) :
+    if n % 3 == 0 and n % 5 == 0:
+        print("FizzBuzz")    
+    elif n % 3 == 0:
+        print("Fizz")
+    elif n % 5 == 0:
+        print("Buzz")
+    else:    
+        print(n)
+
+
+#if it's not a function it's okay to call "print"
