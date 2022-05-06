@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block container %} 
+
+<h2> {{n}} words with prefix {{letter}} </h2>
+
+{% if is_real_word %} 
+<h2>{{letter}} is a real word </h2>
+{% endif %}
+
+<ul>
+    {% for displayed_letters in displayed_list %}
+     <li><a href="{{ url_for('dictionary', letter=displayed_letters) }}">{{ displayed_letters }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %} 
