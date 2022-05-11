@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> How it started </title>
+<style>
+img{width:20%;}
+</style>
+</head>
+
+<body>
+<h1> How our friendship started </h1>
+
+<p> We were introduced to each other at a party.
+</p>
+<p> Next, we found out that we lived on the same floor in the dormitory of the university.
+</p>
+
+<h2> What happened next? </h2>
+<p> We started doing things together
+</p>
+
+<ul>
+<li> We used to go to all parties together </li>
+<li> We went together to the Rec Center several times </li>
+<li> We went together to my favorite local band's concert </li>
+</ul>
+
+<img src="Concert.jpg">
+<h3> Here is us on our way back to the dorm from the concert in August 2017 </h3>
+
+ 	<h3> To find out more about Antoine click     
+	<a href="about_Antoine.html"> here </a>
+	</h3>
+
+	<h3> To return back to the home page click     
+	<a href="index.html"> here </a>
+	</h3>
+
+</body>
+</html>
