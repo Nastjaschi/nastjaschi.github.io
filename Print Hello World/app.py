@@ -7,4 +7,9 @@ def home():
 
  
 
-    return render_template('main.html')
+    return render_template('main_unauthorized.html')
+
+@app.route("/loggedin")
+def logged_main():
+
+    return render_template('main_logged.html')
