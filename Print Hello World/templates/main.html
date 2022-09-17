@@ -1,0 +1,73 @@
+
+{% extends 'base.html' %} 
+{% block content %} 
+
+
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="{{url_for('static', filename='Logo.png')}}"  width="10%" height="10%">
+              
+       
+  
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Оставить отзыв
+          </a>
+    
+          <a class="navbar-item">
+            Онлайн школы
+          </a>
+    
+        
+            <a class="navbar-item">
+              ScoreBox
+            </a>
+    
+           
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              
+              <a class="button is-link">
+                Войти
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+
+    <div class="container" >
+      
+      <div style="padding:10px;" >
+      <button class="button">Все</button>
+    </div>
+    <div style="padding:10px;" >
+      <button class="button">Маркетинг</button>
+    </div>
+
+      <div style="padding:10px;" >
+      <button class="button">Продакт-менеджмент</button>
+    </div>
+
+      <div style="padding:10px;" >
+      <button class="button">Дизайн</button>
+    </div>
+    
+  </div>
+ 
+
+
+
+
+    
+
+
+  {% endblock %}
