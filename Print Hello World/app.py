@@ -9,6 +9,26 @@ def home():
 
     return render_template('main_unauthorized.html')
 
+@app.route("/login")
+def log_in():
+
+    return render_template('login.html')
+
+@app.route("/signup")
+def sign_up():
+
+    return render_template('signup.html')
+
+@app.route("/success")
+def success_review():
+
+    return render_template('success.html')
+
+@app.route("/request")
+def request():
+
+    return render_template('request_course.html')
+
 
 @app.route("/loggedin/")
 def logged_main():
