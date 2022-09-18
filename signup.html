@@ -1,0 +1,73 @@
+
+{% extends 'base.html' %} 
+{% block content %} 
+
+
+
+    <nav class="navbar is-light container.is-max-widescreen" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="{{url_for('static', filename='Logo.png')}}"  width="10%" height="10%">
+              
+       
+  
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Главная страница
+          </a>
+        </div>  
+      </div>
+    </div>
+    </nav>
+
+    <section class="section">
+        <h1 class="title">Зарегистрироваться</h1>
+        <h2 class="subtitle">
+          Пожалуйста, введите данные для регистрации нового аккаунта.
+        </h2>
+
+            <div class="field" style="width: 400px">
+                <p class="control">
+                <input class="input" type="nickname" placeholder="Имя пользователя">
+                </p>
+            </div>
+
+            <div class="select">
+                <select>
+                  <option>Администратор</option>
+                  <option>Пользователь</option>
+                </select>
+            </div>
+
+
+             <div class="field" style="width: 400px">
+                <p class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                </p>
+            </div>
+
+            <div class="field" style="width: 400px">
+                <p class="control has-icons-left">
+                <input class="input" type="password" placeholder="Password">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="button is-link">Зарегистрироваться</button>
+              </div>
+
+        </section>
+    </div>
+
+
+    
+
+
+  {% endblock %}
