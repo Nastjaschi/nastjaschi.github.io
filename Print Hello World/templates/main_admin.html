@@ -6,24 +6,27 @@
 
     <nav class="navbar is-light container.is-max-widescreen" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" style = "max-height: 50px;">
-        <img src="{{url_for('static', filename='Logo.png')}}"  width="70px">
+        <img src="{{url_for('static', filename='Logo.png')}}" width = "70px">
               
        
   
     
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarBasicExample" class="navbar-menu" style = "max-height: 50px;">
         <div class="navbar-start">
           <a class="navbar-item">
-            Оставить отзыв
+            Новые курсы
           </a>
     
           <a class="navbar-item">
-            Онлайн школы
+            Новые отзывы
           </a>
-    
+
+          <a class="navbar-item">
+            Клиентские предпочтения
+          </a>    
         
             <a class="navbar-item">
-              ScoreBox - о нас
+              Заявки на сотрудничество
             </a>
     
            
@@ -85,9 +88,9 @@
       </div>
       <nav class="level is-mobile">
         <div>
-          <div style = "float:inline-start;">
+          <div style = "position:fixed; float:inline-start;">
           <p style = "float:left;";>Рейтинг</p>
-          <a class="level-item" aria-label="like" style = "padding-top: 5px;"> 
+          <a class="level-item" aria-label="like" style = "padding-top: 5px; padding-left: 30px;"> 
             <span class="icon is-small">
               <i class="fa-solid fa-star" aria-hidden="true" style = "color:yellow; display:inline-block;"></i>
               <i class="fa-solid fa-star" aria-hidden="true" style = "color:yellow; display:inline-block;"></i>
@@ -99,6 +102,7 @@
           <br>
           <div class="buttons" style="position: relative; float:right;">
           <button class="button is-link" style="position: relative; float:right;">Смотреть отзывы</button>
+          <button class="button is-danger" style="position: relative; float:right;">Удалить курс</button>
         </div>
         </div>
       </nav>

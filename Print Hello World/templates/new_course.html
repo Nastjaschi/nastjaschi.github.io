@@ -1,0 +1,125 @@
+
+{% extends 'base.html' %} 
+{% block content %} 
+
+
+
+    <nav class="navbar is-light container.is-max-widescreen" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand" style = "max-height: 50px;">
+        <img src="{{url_for('static', filename='Logo.png')}}"  width="70px">
+              
+       
+  
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start" >
+          <a class="navbar-item">
+            Оставить отзыв
+          </a>
+    
+          <a class="navbar-item">
+            Онлайн школы
+          </a>
+    
+        
+            <a class="navbar-item">
+              ScoreBox - о нас
+            </a>
+    
+           
+        </div>
+    
+        <div class="navbar-end" style="float:right;">
+          <div class="navbar-item">
+            <div class="buttons" style="float:right;">
+              
+              <a class="button is-link" >
+                Выйти
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+
+
+
+    <!-- Main container -->
+<nav class="level" style = "background-color: hsl(0, 0%, 96%); display:block; height: 100%;">
+  <div class="container is-max-widescreen column " style = "text-align: left;">
+    <p class="subtitle is-5">
+      Пожалуйста, введите данные о курсе:
+    </p>
+  </div>
+ 
+
+<!-- строка 1 -->
+<div class="level-left" style="padding: 10px;">
+  <div class="level-item column is-one-quarter" style = "text-align: right;">
+    <p class="subtitle is-7">
+      <strong>Название курса</strong>
+    </p>
+  </div>
+
+  <div class="level-item column is-half">
+
+    <input class="input is-link" type="text" placeholder="Link input" style = "width:500px;">
+
+  </div>
+
+
+</div>
+
+<!-- строка 2 -->
+<div class="level-left" style="padding: 10px;">
+  <div class="level-item column is-one-quarter" style = "text-align: right;">
+    <p class="subtitle is-7">
+      <strong>Школа</strong>
+    </p>
+  </div>
+
+  <div class="level-item column is-half">
+
+    <input class="input is-link" type="text" placeholder="Link input" style = "width:500px;">
+
+  </div>
+
+
+</div>
+
+</nav>
+
+<div class="container is-max-widescreen">
+
+
+<div class="buttons container is-max-widescreen column is-half" style = "align-items: center; display: inline-block;">
+  <button class="button is-link" style = "align-items: center; float: none;">Отправить
+  </button>
+</div>
+
+</div>
+
+<div class="container is-max-widescreen" style = "text-align: center; padding: 10px;">
+
+    <div class = "column is-half" style = "text-align: center; padding: 10px; display: inline-block;">
+      <p class="subtitle is-5">
+        <strong></strong>
+      </p>
+    </div>
+    
+    <div class="container is-max-widescreen column " style = "text-align: left;">
+      <p class="subtitle is-5">
+        Мы свяжемся с Вами, как только курс будет доступен на ScoreBox.
+      </p>
+    </div>
+
+
+</div>
+
+
+    
+
+
+  {% endblock %}
