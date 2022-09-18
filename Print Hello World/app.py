@@ -57,3 +57,13 @@ def new_course():
 def admin_new_courses():
 
     return render_template('admin_new_courses.html')
+
+@app.route("/admin_request_courses/")
+def admin_request_courses():
+
+    return render_template('admin_request_course.html')
+
+@app.route("/admin_cooperation/")
+def admin_cooperation():
+
+    return render_template('admin_cooperation.html')
